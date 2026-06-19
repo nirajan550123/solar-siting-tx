@@ -1,0 +1,33 @@
+# Secrets - NEVER commit
+.env
+*.key
+
+# Data (large / licensed / re-downloadable from sources documented in scripts)
+data/raw/
+data/interim/
+data/processed/
+*.gpkg
+*.geojson
+*.shp
+*.shx
+*.dbf
+*.prj
+*.csv
+*.json
+
+# Allow small config/example files through despite the data globs above
+!.env.example
+!requirements.txt
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
