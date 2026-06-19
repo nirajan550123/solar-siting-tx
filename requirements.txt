@@ -1,0 +1,17 @@
+# Core geospatial + ML stack for the solar-siting pipeline.
+# Pin to your tested versions before publishing if you want exact reproducibility
+# (pip freeze > requirements-lock.txt from your working venv).
+geopandas
+shapely
+pandas
+numpy
+scipy
+scikit-learn
+xgboost
+shap
+earthengine-api
+requests
+python-dotenv
+matplotlib
+scikit-gstat
+boruta
