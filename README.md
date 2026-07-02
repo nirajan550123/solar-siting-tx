@@ -1,4 +1,4 @@
-# Where Solar Gets Built (and Why It Isn't About Sun)
+# Where Solar Gets Built: Utility-Scale Solar Siting in Texas
 
 **A machine-learning analysis of utility-scale solar siting in Texas, with a North Carolina transfer test.**
 
@@ -18,14 +18,14 @@ Using 176 operating utility-scale solar facilities across Texas, a Random Forest
 
 Then the part that makes it more than a Texas story:
 
-- **North Carolina built about four times as much solar as Texas despite lower irradiance.** Worse sun, more solar. Policy beats physics.
+- **North Carolina built about four times as much solar as Texas despite lower irradiance.**
 - The Texas-trained model transfers to North Carolina at **ROC-AUC 0.76 ± 0.01**, partial transfer. The siting logic generalizes in kind (grid access matters everywhere) but shifts in degree (what counts as "close enough" to the grid is set by each state's regulatory regime).
 
 ## Why this is interesting
 
-Most solar-potential maps rank land by sunshine and slope. They describe *physical potential*. This project models *realized siting*: where developers actually chose to build, which turns out to be a different and more economically revealing question. The gap between the two, irradiance barely matters, grid access dominates, is the contribution.
+Most solar-potential maps rank land by sunshine and slope. They describe *physical potential*. This project models *realized siting*: where developers actually chose to build, which turns out to be a different and more economically revealing question. The gap between the two is the contribution: irradiance barely matters, grid access dominates.
 
-The transfer test sharpens it. Comparable siting studies rarely test whether their model generalizes to another state at all. By training on Texas and predicting North Carolina, this project shows the siting relationship is universal in shape but regime-specific in calibration, and it localizes exactly where generalization breaks: at the state and policy boundary, not within a state.
+The transfer test sharpens it. Comparable siting studies rarely test whether their model generalizes to another state at all. By training on Texas and predicting North Carolina, this project shows the same siting logic holds in both states but is calibrated by each state’s policy regime, and the transfer test localizes where generalization breaks: at the state boundary.
 
 ## How it was built
 
